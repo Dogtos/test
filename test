@@ -1,0 +1,12 @@
+def calculate_candies_to_discard(alice_candies, petr_candies, mary_candies):
+    total_candies = alice_candies + petr_candies + mary_candies
+    candies_to_discard = total_candies % 3
+    return candies_to_discard
+
+# Пример использования:
+alice_candies = 30
+petr_candies = 31
+mary_candies = 32
+
+candies_to_discard = calculate_candies_to_discard(alice_candies, petr_candies, mary_candies)
+print(f"Количество конфет, которые нужно выкинуть: {candies_to_discard}")
